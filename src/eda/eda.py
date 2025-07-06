@@ -1,8 +1,3 @@
-# %% [markdown]
-# # Comprehensive Exploratory Data Analysis for Body Performance Dataset
-# This script performs a complete EDA including visualizations for multiclass classification
-
-# %% Import libraries
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -22,11 +17,6 @@ sns.set_palette("husl")
 
 
 def load_and_examine_data():
-    """Load dataset and display basic information"""
-    print("="*60)
-    print("BODY PERFORMANCE DATASET - EXPLORATORY DATA ANALYSIS")
-    print("="*60)
-
     # Load the dataset
     df = pd.read_csv('bodyPerformance.csv')
 
@@ -49,10 +39,6 @@ def load_and_examine_data():
 
 
 def assess_data_quality(df):
-    """Assess data quality and identify potential issues"""
-    print("\n" + "="*60)
-    print("DATA QUALITY ASSESSMENT")
-    print("="*60)
 
     # Check for missing values
     print("Missing Values:")
